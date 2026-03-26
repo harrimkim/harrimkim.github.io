@@ -1,7 +1,405 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김하림 | Developer</title>
+  <meta name="description" content="개발자 김하림">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">H<span class="accent">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#career">Career</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">What I Do</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#projects">Projects</a>
+    <a href="#work">What I Do</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+    </div>
+    <div class="container hero-content">
+      <img src="profile.webp" alt="김하림" class="hero-photo fade-up">
+      <div class="hero-badge fade-up" style="--delay:0.05s">Developer &middot; Since 2012</div>
+      <h1 class="hero-title fade-up" style="--delay:0.1s">
+        안녕하세요,<br><span class="gradient-text">김하림</span>입니다.
+      </h1>
+      <p class="hero-desc fade-up" style="--delay:0.2s">
+        2012년부터 개발을 시작해 올해로 14년차입니다.<br>
+        777개 기업이 사용하는 서비스를 처음부터 설계하고,<br>
+        40만 명이 실제로 사용하는 시스템을 만들어 운영해왔습니다.
+      </p>
+      <div class="hero-stats fade-up" style="--delay:0.3s">
+        <div class="stat">
+          <span class="stat-number" data-count="14">0</span><span class="stat-unit">년</span>
+          <span class="stat-label">개발 경력</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="777">0</span><span class="stat-unit">개</span>
+          <span class="stat-label">도입 기업</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="400000">0</span><span class="stat-unit">명+</span>
+          <span class="stat-label">실제 사용자</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="10000">0</span><span class="stat-unit">명</span>
+          <span class="stat-label">동시접속</span>
+        </div>
+      </div>
+      <div class="hero-actions fade-up" style="--delay:0.4s">
+        <a href="#about" class="btn btn-primary">더 알아보기</a>
+        <a href="#contact" class="btn btn-ghost">연락하기</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label fade-up">About</div>
+      <h2 class="section-title fade-up">한 번 만들면,<br>그냥 잘 돌아가게.</h2>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>
+            대학에서 컴퓨터공학을 전공하고 석사까지 마치면서 개발의 기초 체력을 쌓았습니다.
+            졸업 후에는 마이다스아이티에서 채용 솔루션과 역량검사 서비스 개발에 바로 투입됐고,
+            입사 한 달 만에 일본 출시용 프로토타입을 완성하면서 실무에 빠르게 적응했습니다.
+          </p>
+          <p>
+            이후 마이다스인에서 역량검사 서비스를 처음부터 새로 설계했습니다.
+            4명으로 시작한 팀을 11명까지 키웠고, 개발 리딩에서 팀 리딩으로 역할이 확장됐습니다.
+            777개 기업이 도입하고, 40만 명이 실제로 응시한 서비스를 만들고 운영했습니다.
+          </p>
+          <p>
+            주어진 일만 하는 걸 좋아하지 않습니다.
+            서버 비용이 새고 있으면 직접 찾아서 연 400만원을 줄였고,
+            1,000줄짜리 함수가 보이면 리팩토링했습니다.
+            만든 서비스가 오래, 안정적으로 돌아가는 게 목표입니다.
+          </p>
+        </div>
+        <div class="about-info fade-up">
+          <div class="info-card">
+            <h4>Education</h4>
+            <div class="info-item">
+              <span class="info-main">인천대학교 컴퓨터공학 석사</span>
+              <span class="info-sub">2016 - 2018</span>
+            </div>
+            <div class="info-item">
+              <span class="info-main">인천대학교 컴퓨터공학 학사</span>
+              <span class="info-sub">2012 - 2016</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h4>Awards</h4>
+            <div class="info-item">
+              <span class="info-main">마이다스 보람상</span>
+              <span class="info-sub">2022</span>
+            </div>
+            <div class="info-item">
+              <span class="info-main">마이다스 베스트 인재상</span>
+              <span class="info-sub">2020</span>
+            </div>
+            <div class="info-item">
+              <span class="info-main">마이다스 챌린지 최우수상</span>
+              <span class="info-sub">2018</span>
+            </div>
+            <div class="info-item">
+              <span class="info-main">IoT 홈가전 SW 경진대회 우수상</span>
+              <span class="info-sub">2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career -->
+  <section class="section section-dark" id="career">
+    <div class="container">
+      <div class="section-label fade-up">Career</div>
+      <h2 class="section-title fade-up">어디서 뭘 해왔는지</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">2020.02 - 2023.11</div>
+            <h3>마이다스인</h3>
+            <span class="timeline-role">역량검사 개발팀 리더</span>
+            <p class="timeline-desc">
+              채용 과정에서 지원자의 역량을 평가하는 온라인 검사 서비스를 새로 만들었습니다.
+              처음에 개발 리딩으로 시작해서, 팀 전체를 이끄는 역할까지 맡게 됐습니다.
+            </p>
+            <ul>
+              <li><strong>777개 기업</strong>이 실제로 도입해서 사용</li>
+              <li>누적 <strong>402,555명</strong>이 응시 완료</li>
+              <li><strong>10,000명 동시접속</strong>에도 안정 운영</li>
+              <li>4명 &rarr; 11명 팀 빌딩</li>
+              <li>개인정보 보안 인증(ISMS) 획득</li>
+              <li>불필요한 서버 비용 찾아서 <strong>연 400만원+ 절감</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">2018.08 - 2020.02</div>
+            <h3>마이다스아이티</h3>
+            <span class="timeline-role">개발자</span>
+            <p class="timeline-desc">
+              채용 솔루션과 역량검사 서비스를 개발했습니다.
+              입사 후 빠르게 도메인을 파악하고, 일본 시장 출시까지 경험했습니다.
+            </p>
+            <ul>
+              <li>입사 <strong>한 달 만에</strong> 일본 출시용 프로토타입 완성</li>
+              <li>일본 현지화 &rarr; <strong>20개 기업</strong> 도입</li>
+              <li>G/S 검사 단독 개발</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot dot-edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">2012 - 2018</div>
+            <h3>인천대학교</h3>
+            <span class="timeline-role">컴퓨터공학 학사 &middot; 석사</span>
+            <p class="timeline-desc">
+              6년간 컴퓨터공학을 전공하며 개발의 기초를 다졌습니다.
+              IoT 경진대회 수상, 다수 프로젝트 경험.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label fade-up">Projects</div>
+      <h2 class="section-title fade-up">만들었던 것들</h2>
+
+      <div class="project-card fade-up">
+        <div class="project-header">
+          <div>
+            <span class="project-badge">Team Lead</span>
+            <h3>역량검사 서비스 (신역검)</h3>
+          </div>
+          <span class="project-period">2021 ~ 2023</span>
+        </div>
+        <p class="project-summary">
+          채용 시 지원자의 역량을 평가하는 온라인 검사 서비스입니다.
+          기업마다 독립된 환경을 제공하고, 수천 명이 동시에 시험을 봐도
+          끊기지 않도록 설계했습니다. 시험 문제 유출 방지, 부정행위 탐지 등
+          보안도 직접 설계하고 구현했습니다.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight">
+            <span class="highlight-number">777개</span>
+            <span class="highlight-label">도입 기업</span>
+          </div>
+          <div class="highlight">
+            <span class="highlight-number">40만명+</span>
+            <span class="highlight-label">누적 응시자</span>
+          </div>
+          <div class="highlight">
+            <span class="highlight-number">10,000명</span>
+            <span class="highlight-label">동시접속 처리</span>
+          </div>
+        </div>
+        <div class="project-what">
+          <div class="what-item">
+            <h5>뭘 만들었나</h5>
+            <p>
+              응시자가 시험을 보는 사이트, 기업 관리자가 시험을 관리하는 사이트,
+              내부 운영을 위한 백오피스, 그리고 이 모든 걸 연결하는 서버와 API를
+              설계하고 개발했습니다.
+            </p>
+          </div>
+          <div class="what-item">
+            <h5>어떤 문제를 풀었나</h5>
+            <p>
+              기업마다 데이터를 완전히 분리해야 했고, 10,000명이 동시에 접속해도
+              멈추면 안 됐습니다. 시험 문제가 사전에 유출되지 않도록 암호화하고,
+              부정 응시를 실시간으로 감지하는 시스템도 만들었습니다.
+            </p>
+          </div>
+          <div class="what-item">
+            <h5>비용도 줄였나</h5>
+            <p>
+              음성 데이터 캐싱으로 연 300만원, 불필요한 저장소 정리로 연 100만원 이상
+              서버 비용을 절감했습니다. 쓸데없이 나가는 돈을 찾아서 직접 줄였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-header">
+          <div>
+            <span class="project-badge secondary">일본 출시</span>
+            <h3>역량검사 일본 현지화</h3>
+          </div>
+          <span class="project-period">2018 ~ 2019</span>
+        </div>
+        <p class="project-summary">
+          기존 역량검사 서비스를 일본 시장에 맞게 현지화한 프로젝트입니다.
+          단순 번역이 아니라, 문화별로 다르게 인식되는 요소까지 고려해야 했습니다.
+          신입 때 맡았는데, 한 달 만에 프로토타입을 완성하고 실제로 일본에 출시했습니다.
+        </p>
+        <div class="project-what">
+          <div class="what-item">
+            <h5>뭘 했나</h5>
+            <p>
+              다국어 구조를 처음부터 설계하고, 일본 현지 이메일/SMS 시스템을 도입했습니다.
+              번역가가 번역하면 코드에 자동으로 반영되는 시스템도 구축했습니다.
+            </p>
+          </div>
+          <div class="what-item">
+            <h5>결과</h5>
+            <p>
+              일본 20개 기업이 실제로 사용했습니다.
+              이 경험을 바탕으로 이후 신역검의 다국어 구조도 설계하게 됐습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do -->
+  <section class="section section-dark" id="work">
+    <div class="container">
+      <div class="section-label fade-up">What I Do</div>
+      <h2 class="section-title fade-up">이런 일을 할 수 있습니다</h2>
+      <p class="section-desc fade-up">
+        지금까지 해온 경험을 바탕으로, 이런 종류의 일을 잘합니다.
+      </p>
+
+      <div class="work-grid">
+        <div class="work-card fade-up">
+          <h4>서비스 설계 &amp; 개발</h4>
+          <p>
+            처음부터 서비스를 설계하고, 만들고, 운영까지 해본 경험이 있습니다.
+            "이런 서비스를 만들고 싶은데" 단계부터 함께 할 수 있습니다.
+          </p>
+          <div class="work-price">프로젝트 규모에 따라 별도 협의</div>
+        </div>
+        <div class="work-card fade-up">
+          <h4>기존 시스템 개선</h4>
+          <p>
+            느려진 시스템, 꼬여버린 코드, 불필요하게 나가는 서버 비용.
+            문제를 찾아서 고치는 걸 좋아합니다.
+          </p>
+          <div class="work-price">프로젝트 규모에 따라 별도 협의</div>
+        </div>
+        <div class="work-card fade-up">
+          <h4>쇼핑몰 커스텀</h4>
+          <p>
+            카페24 쇼핑몰의 디자인 수정, 기능 추가, 결제 버튼 설정 등
+            소규모 커스텀 작업도 진행합니다.
+          </p>
+          <div class="work-price">단순 수정 1만원~ &middot; 묶음 작업 8만원~</div>
+          <button class="detail-toggle" onclick="document.getElementById('pricingModal').classList.add('open')">
+            상세 단가 보기 &rarr;
+          </button>
+        </div>
+        <div class="work-card fade-up">
+          <h4>팀 빌딩 &amp; 리딩</h4>
+          <p>
+            4명에서 11명까지 팀을 키워본 경험이 있습니다.
+            개발 조직을 세팅하거나 리딩이 필요한 상황에서 도움을 드릴 수 있습니다.
+          </p>
+          <div class="work-price">프로젝트 규모에 따라 별도 협의</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div class="section-label fade-up">Contact</div>
+      <h2 class="section-title fade-up">연락처</h2>
+      <p class="section-desc fade-up" style="margin:0 auto 40px;">
+        궁금한 점이 있으시면 편하게 연락주세요.
+      </p>
+      <div class="contact-cards fade-up">
+        <a href="mailto:harrimkim@gmail.com" class="contact-card">
+          <div class="contact-icon">&#9993;</div>
+          <div>
+            <span class="contact-method">Email</span>
+            <span class="contact-value">harrimkim@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+821027824595" class="contact-card">
+          <div class="contact-icon">&#9742;</div>
+          <div>
+            <span class="contact-method">Phone</span>
+            <span class="contact-value">010-2782-4595</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Modal -->
+  <div class="modal-overlay" id="pricingModal" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('pricingModal').classList.remove('open')">&times;</button>
+      <h3>카페24 쇼핑몰 커스텀 상세 단가</h3>
+      <p class="modal-desc">참고용 기준 단가입니다. 정확한 금액은 상담 후 안내드립니다.</p>
+      <div class="modal-table">
+        <div class="modal-section-label">개별 작업</div>
+        <div class="modal-row"><span>상세페이지 레이아웃 수정</span><span>240,000원</span></div>
+        <div class="modal-row"><span>옵션 영역 커스텀 (2단 구성)</span><span>160,000원</span></div>
+        <div class="modal-row"><span>일일 한정수량 기능</span><span>160,000원</span></div>
+        <div class="modal-row"><span>팝업 노출 작업</span><span>80,000원</span></div>
+        <div class="modal-row"><span>리다이렉트 작업</span><span>80,000원</span></div>
+        <div class="modal-row"><span>네이버/카카오페이 버튼 변경</span><span>64,000원</span></div>
+        <div class="modal-row"><span>UI 영역 수정</span><span>64,000원</span></div>
+        <div class="modal-row"><span>단순 수정 (텍스트/이미지)</span><span>10,000원~</span></div>
+        <div class="modal-section-label" style="margin-top:20px;">묶음 할인</div>
+        <div class="modal-row"><span>3~4건 묶음</span><span>30만 ~ 45만원</span></div>
+        <div class="modal-row"><span>5건 이상 묶음</span><span>50만 ~ 70만원</span></div>
+      </div>
+      <p class="modal-note">수정 1회 포함 &middot; 완료 후 1개월 내 오류 수정 무상</p>
+      <a href="#contact" class="btn btn-primary modal-cta" onclick="document.getElementById('pricingModal').classList.remove('open')">문의하기</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; 2026 Harim Kim</p></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
